@@ -27,8 +27,8 @@ const TopBanner = () => {
                     })
                 }
             </Slider>
-            <FiArrowLeft onClick={() => topSlider.current.slickPrev()} className="iconL" />
-            <FiArrowRight onClick={() => topSlider.current.slickNext()} className="iconR" />
+            <FiArrowLeft onClick={() => topSlider.current.slickPrev()} className="icon left" />
+            <FiArrowRight onClick={() => topSlider.current.slickNext()} className="icon right" />
         </div>
     )
 }
