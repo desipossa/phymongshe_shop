@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/phymongshe_shop/static/css/main.073c9b0a.css",
+    "main.js": "/phymongshe_shop/static/js/main.7a8ccac4.js",
+    "static/js/787.04bc23d9.chunk.js": "/phymongshe_shop/static/js/787.04bc23d9.chunk.js",
+    "static/media/logo.svg": "/phymongshe_shop/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/phymongshe_shop/index.html",
+    "main.073c9b0a.css.map": "/phymongshe_shop/static/css/main.073c9b0a.css.map",
+    "main.7a8ccac4.js.map": "/phymongshe_shop/static/js/main.7a8ccac4.js.map",
+    "787.04bc23d9.chunk.js.map": "/phymongshe_shop/static/js/787.04bc23d9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.7a8ccac4.js"
+  ]
+}
