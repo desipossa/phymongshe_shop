@@ -15,6 +15,7 @@ const MainSlide = () => {
                 autoplay={true}
                 pauseOnHover={false}
                 ref={MainSlide}
+                dots={true}
             >
                 {
                     main_content.slice(0, 3).map((it, idx) => {

@@ -1,12 +1,20 @@
 @use 'common';
 
 .Header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
     line-height: 8rem;
-    background: common.$wColor;
+
+    &.on .gnb {
+        background: common.$wColor;
+    }
 
     .gnb {
         position: relative;
+        transition: 0.5s;
 
         ul {
             display: flex;
