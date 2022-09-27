@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/phymongshe_shop/static/css/main.073c9b0a.css",
-    "main.js": "/phymongshe_shop/static/js/main.7a8ccac4.js",
-    "static/js/787.04bc23d9.chunk.js": "/phymongshe_shop/static/js/787.04bc23d9.chunk.js",
-    "static/media/logo.svg": "/phymongshe_shop/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/phymongshe_shop/static/css/main.510c6d54.css",
+    "main.js": "/phymongshe_shop/static/js/main.e1667fac.js",
+    "static/media/main_m02.jpg": "/phymongshe_shop/static/media/main_m02.48a0b8f36124cbe7a890.jpg",
+    "static/media/main_m03.jpg": "/phymongshe_shop/static/media/main_m03.1559ec9b1e18beb50645.jpg",
+    "static/media/main_m01.jpg": "/phymongshe_shop/static/media/main_m01.fb9e5a378be02e62097c.jpg",
     "index.html": "/phymongshe_shop/index.html",
-    "main.073c9b0a.css.map": "/phymongshe_shop/static/css/main.073c9b0a.css.map",
-    "main.7a8ccac4.js.map": "/phymongshe_shop/static/js/main.7a8ccac4.js.map",
-    "787.04bc23d9.chunk.js.map": "/phymongshe_shop/static/js/787.04bc23d9.chunk.js.map"
+    "main.510c6d54.css.map": "/phymongshe_shop/static/css/main.510c6d54.css.map",
+    "main.e1667fac.js.map": "/phymongshe_shop/static/js/main.e1667fac.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.7a8ccac4.js"
+    "static/css/main.510c6d54.css",
+    "static/js/main.e1667fac.js"
   ]
 }
