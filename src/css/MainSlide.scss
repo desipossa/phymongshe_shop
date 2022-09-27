@@ -1,0 +1,29 @@
+@use 'common';
+
+.MainSlide {
+    position: relative;
+
+    .slick-track {
+        transition-duration: 0.5ms;
+    }
+
+    .itm {
+        height: calc(100vh - 18rem);
+        color: common.$wColor;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &.itm01 {
+            background-image: url(../../public/assets/img/main_m01.jpg);
+        }
+
+        &.itm02 {
+            background-image: url(../../public/assets/img/main_m02.jpg);
+        }
+
+        &.itm03 {
+            background-image: url(../../public/assets/img/main_m03.jpg);
+        }
+    }
+}

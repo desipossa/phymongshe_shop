@@ -24,6 +24,17 @@
 
                 span {
                     position: absolute;
+                    width: 2rem;
+                    height: 2rem;
+                    font-size: 1.25rem;
+                    padding: 0.5rem;
+                    top: 1.5rem;
+                    right: -1rem;
+                    background: common.$mainColor;
+                    color: common.$wColor;
+                    border-radius: 50%;
+                    line-height: 0.8;
+                    text-align: center;
                 }
             }
         }
