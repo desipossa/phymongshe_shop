@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 const Cart = ({ cart, setCart }) => {
     useEffect(() => {
         setCart(cart.filter((itm, idx, arry) => idx === arry.findIndex(it => it.id === itm.id)))
-    }, [cart])
+    }, [])
     // cart = cart.filter((itm, idx, arry) => idx === arry.findIndex(it => it.id === itm.id))
     return (
         <div style={{ paddingTop: '500px' }}>
@@ -13,6 +13,7 @@ const Cart = ({ cart, setCart }) => {
                         <ul key={ca.id}>
                             <li>{ca.id}</li>
                             <li>{ca.itm}</li>
+                            <li>{ca.e} 개 사고파요...</li>
                         </ul>
                     )
 
