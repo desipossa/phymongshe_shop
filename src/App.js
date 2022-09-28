@@ -11,9 +11,8 @@ import { Route, Routes } from 'react-router-dom';
 //https://desipossa.github.io/shop_cra/assets/data.json
 const App = () => {
     const [itm, setItm] = useState();
-    const [cart, setCart] = useState([
-        { id: 1, itm: "ssssssssssssssssssss", price: 5000 }
-    ]);
+    const [cart, setCart] = useState([]);
+
     useEffect(() => {
         const url = 'https://desipossa.github.io/shop_cra/assets/data.json'
         const getProduct = async () => {
@@ -41,8 +40,7 @@ const App = () => {
     }, [])
     return (
         <>
-            <Header />
-
+            <Header cart={cart} />
             {
                 itm ?
                     <Routes>
