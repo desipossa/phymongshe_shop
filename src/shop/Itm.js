@@ -4,7 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 const Itm = ({ shopList, cart, setCart }) => {
     const { itm } = useParams();
     const navigate = useNavigate();
-    const matchItm = shopList.find(it => itm == it.id);
+    const matchItm = shopList.find(it => itm === String(it.id));
     return (
         <section className='shopItm'>
             <div className='inner'>
