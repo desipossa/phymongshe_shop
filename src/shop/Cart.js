@@ -8,9 +8,9 @@ const Cart = ({ cart, setCart }) => {
     return (
         <div style={{ paddingTop: '500px' }}>
             {
-                cart.map(ca => {
+                cart.map((ca, idx) => {
                     return (
-                        <ul key={ca.id}>
+                        <ul key={idx}>
                             <li>{ca.id}</li>
                             <li>{ca.itm}</li>
                             <li>{ca.e} 개 사고파요...</li>
