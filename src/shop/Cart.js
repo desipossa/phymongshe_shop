@@ -1,9 +1,21 @@
 import React from 'react'
 
-const Cart = () => {
+const Cart = ({ cart }) => {
     return (
-        <div>Cart</div>
+        <div style={{ paddingTop: '500px' }}>
+            {
+                cart.map(ca => {
+                    return (
+                        <ul>
+                            <li>{ca.id}</li>
+                            <li>{ca.itm}</li>
+                        </ul>
+                    )
+
+                })
+            }
+        </div>
     )
 }
 
-export default Cart
+export default Cart;
