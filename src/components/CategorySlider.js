@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 const CategorySlider = ({ shopList, category }) => {
     const Mainlist = shopList.filter(it => category === it.cate);
     return (
-        <section className='shopList--'>
+        <section className='shopList-- sc'>
             <div className='inner'>
                 <Slider
                     arrows={false}
@@ -17,14 +17,14 @@ const CategorySlider = ({ shopList, category }) => {
                         Mainlist.map(it => {
                             return (
                                 <figure key={it.id}>
-                                    <Link to={'/shopItem/' + it.id}>
-                                        <div className="box">
-                                            <img src={it.src} alt="" />
-                                        </div>
-                                        <div className='name'>{it.name}</div>
-                                        <div className='des'>{it.des.substring(0, 100)} ...</div>
-                                        <div className='price'><span>{it.price.toLocaleString()}</span> 원</div>
-                                    </Link>
+
+                                    <div className="box">
+                                        <img src={it.src} alt="" />
+                                    </div>
+                                    <div className='name'> <Link to={'/shopItem/' + it.id}>{it.name}</Link></div>
+                                    <div className='des'>{it.des.substring(0, 100)} ...</div>
+                                    <div className='price'><span>{it.price.toLocaleString()}</span> 원</div>
+
                                 </figure>
                             )
                         })
