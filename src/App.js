@@ -46,7 +46,7 @@ const App = () => {
                     <div className='wapper'>
                         <Header cart={cart} shopList={itm} />
                         <Routes>
-                            <Route path='/' element={<Main />} />
+                            <Route path='/' element={<Main shopList={itm} />} />
                             <Route path='/cart' element={<Cart cart={cart} setCart={setCart} />} />
                             <Route path='/shopList' element={<List shopList={itm} />} />
                             <Route path='/shopList/:cate' element={<Category shopList={itm} />} />
