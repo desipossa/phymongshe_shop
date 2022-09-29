@@ -5,7 +5,6 @@ const Itm = ({ shopList, cart, setCart }) => {
     const { itm } = useParams();
     const navigate = useNavigate();
     const matchItm = shopList.find(it => itm === String(it.id));
-    const num = useRef(1)
     return (
         <section className='shopItm'>
             <div className='inner'>
