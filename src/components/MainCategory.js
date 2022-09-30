@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const MainCategory = ({ shopList, category }) => {
     const Mainlist = shopList.filter(it => category === it.cate);
     return (
-        <section className='shopList'>
+        <div className='shopList'>
             <div className='inner'>
                 {
                     Mainlist.map(it => {
@@ -24,7 +24,7 @@ const MainCategory = ({ shopList, category }) => {
                     })
                 }
             </div>
-        </section>
+        </div>
     )
 }
 

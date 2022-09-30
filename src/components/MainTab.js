@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import MainCategory from './MainCategory'
+import CategorySlider from './CategorySlider'
 
 const MainTab = ({ shopList }) => {
     const link = [
@@ -8,7 +9,7 @@ const MainTab = ({ shopList }) => {
     ];
     const [alink, setAlink] = useState(0);
     return (
-        <section className='MainTab sc'>
+        <section className='sc'>
             <h2>Best Product</h2>
             <ul className='bp_tab'>
                 {
@@ -17,7 +18,8 @@ const MainTab = ({ shopList }) => {
                     })
                 }
             </ul>
-            <MainCategory shopList={shopList} category={link[alink]} />
+            <CategorySlider shopList={shopList} category={link[alink]} />
+
         </section>
     )
 }
