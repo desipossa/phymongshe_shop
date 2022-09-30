@@ -12,10 +12,9 @@ const Main = ({ shopList }) => {
             <MainSlide />
             <MainProuctSlide shopList={shopList} category={'pencil'} tit={'BEST PRODUCT'} des={'피몽쉐 마인드풀 라운지 BEST PRODUCT'} arrow={true} dots={true} />
             <MainProuctSlide shopList={shopList} category={'liquid'} tit={'NEW PRODUCT'} des={'피몽쉐 마인드풀 라운지 new PRODUCT'} arrow={true} dots={false} bg />
-            <MainTab shopList={shopList} />
-            <MainCategory shopList={shopList} category={'pencil'} />
-            <MainCategory shopList={shopList} category={'liquid'} />
             <MainCategory shopList={shopList} category={'powder'} />
+            <MainCategory shopList={shopList} category={'liquid'} bg />
+            <MainTab shopList={shopList} arrow={true} dots={false} />
         </>
     )
 }

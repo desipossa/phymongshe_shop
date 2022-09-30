@@ -18,7 +18,7 @@ const CategorySlider = ({ shopList, category, arrow, dots }) => {
                         <figure key={it.id}>
 
                             <div className="box">
-                                <img src={it.src} alt="" />
+                                <Link to={'/shopItem/' + it.id}><img src={it.src} alt="" /></Link>
                             </div>
                             <div className='name'> <Link to={'/shopItem/' + it.id}>{it.name}</Link></div>
                             <div className='des'>{it.des.substring(0, 100)} ...</div>

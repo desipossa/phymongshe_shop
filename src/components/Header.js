@@ -32,8 +32,10 @@ const Header = ({ cart, shopList }) => {
                 <ul className="rt">
                     <li><FiUserPlus /></li>
                     <li>
-                        <FiShoppingCart />
-                        <span>{cart.length}</span>
+                        <Link to="/cart">
+                            <FiShoppingCart />
+                            <span>{cart.length}</span>
+                        </Link>
                     </li>
                     <li><FiSearch /></li>
                 </ul>

@@ -3,6 +3,63 @@
 .shopList {
     padding: 10rem 0;
 
+    &.pn {
+        padding: 0 0;
+    }
+
+    .category {
+        width: 117rem;
+        margin: 0 auto;
+        text-align: right;
+        line-height: 4rem;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+    }
+
+    .list {
+        display: flex;
+        justify-content: space-between;
+        width: 117rem;
+        line-height: 4rem;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        margin: 0 auto 5rem auto;
+
+        .line {
+            position: relative;
+            flex: 1;
+            font-size: 0;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, 0);
+                width: 80%;
+                height: 1px;
+                border-top: 1px dotted rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .option li {
+            display: inline-block;
+
+            &~li::before {
+                content: "/";
+                padding: 0 0.5rem;
+            }
+        }
+    }
+
+    h2 {
+        text-align: center;
+        line-height: 10rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
     .inner {
         display: grid;
         flex-wrap: wrap;
@@ -12,7 +69,10 @@
         figure {}
 
         .box {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 2rem 1rem;
             margin: 0 0 2rem 0;
+            background: #fff;
         }
 
         .name {

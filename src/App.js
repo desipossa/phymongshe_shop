@@ -9,6 +9,8 @@ import Cart from './shop/Cart'
 import Category from './shop/Category'
 import './css/ShopDetail.scss';
 import { Route, Routes } from 'react-router-dom';
+import SideBanner from './components/SideBanner';
+import ToTop from './components/ToTop';
 //https://desipossa.github.io/shop_cra/assets/data.json
 const App = () => {
     const [itm, setItm] = useState();
@@ -34,8 +36,8 @@ const App = () => {
                 }
             })
             setItm(shopdata);
-            console.log(res.data);
-            console.log(shopdata);
+            // console.log(res.data);
+            // console.log(shopdata);
         }
         getProduct();
     }, [])
@@ -53,6 +55,8 @@ const App = () => {
                             <Route path='/shopItem/:itm' element={<Itm shopList={itm} cart={cart} setCart={setCart} />} />
                         </Routes>
                         <Footer />
+                        <SideBanner />
+                        <ToTop />
                     </div>
                     : <div>로딩 중 입니다.</div>
             }
