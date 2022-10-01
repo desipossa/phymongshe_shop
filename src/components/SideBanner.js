@@ -1,26 +1,32 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Customer from './Customer';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
+import { useLocation, useParams } from 'react-router-dom';
 
-const SideBanner = () => {
+const SideBanner = ({ shopList }) => {
     const [on, setOn] = useState(false);
+    const sideSlide = shopList.slice(0, 30)
+    // const sideSlide = shopList.filter((it, idx, arry) => it === arry[idx] < 10)
+    // console.log(sideSlide, shopList)
     return (
-        <div className={`SideBanner ${on ? 'on' : ''}`}>
-            <Slider className='slide'
+        <div className={`SideBanner slide_ sc ${on ? 'on' : ''}`}>
+            <Slider className='slide_'
                 arrows={false}
                 autoplay={true}
                 pauseOnHover={false}
+                slidesToShow={2}
             >
-                <figure>
-                    <img src={process.env.PUBLIC_URL + '/assets/img/main_m01.jpg'} alt="" />
-                </figure>
-                <figure>
-                    <img src={process.env.PUBLIC_URL + '/assets/img/main_m02.jpg'} alt="" />
-                </figure>
-                <figure>
-                    <img src={process.env.PUBLIC_URL + '/assets/img/main_m03.jpg'} alt="" />
-                </figure>
+                {
+                    sideSlide.map((it, idx) => {
+                        return (
+                            <figure key={idx}>
+                                <img src={it.src} alt="" />
+                            </figure>
+                        )
+                    })
+                }
+
             </Slider>
             <i className={`xi-angle-left  ${on ? 'on' : ''}`}
                 onClick={() => setOn(!on)}

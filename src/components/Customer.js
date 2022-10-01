@@ -9,7 +9,7 @@ const Customer = () => {
                 <div className='tel'>{company.tel}</div>
                 <ul className='open'>
                     {
-                        company.open.map(it => <li>{it}</li>)
+                        company.open.map((it, idx) => <li key={idx}>{it}</li>)
                     }
                 </ul>
             </div>
