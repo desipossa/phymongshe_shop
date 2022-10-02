@@ -4,6 +4,17 @@ const BoardList = ({ list, setList }) => {
     const handlerDelete = (id) => {
         setList(list.filter(it => it.id !== id))
     }
+    //배열 안의 객체 수정...
+    const handlerModify = (id) => {
+        const modify = list.map(it => (
+            id === it.id ? {
+                ...it,
+                check: !it.check
+            }
+                : it
+        ))
+        setList(modify);
+    }
 
     return (
         <div>
@@ -12,6 +23,10 @@ const BoardList = ({ list, setList }) => {
                 list.map((it, idx) => {
                     return (
                         <div key={it.id}>
+                            {console.log(it.check)}
+                            <input type="checkbox" onChange={
+                                () => handlerModify(it.id)
+                            } />
                             {it.id}
                             {it.title}
                             <strong>{it.comment}</strong>

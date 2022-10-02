@@ -25,6 +25,8 @@ const BoardWrite = ({ list, setList, input, setInput }) => {
 
         setInput({
             title: "",
+            content: "",
+            check: false,
         })
         ++nextNum.current
     }

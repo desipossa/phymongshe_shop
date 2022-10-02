@@ -20,6 +20,8 @@ const App = () => {
     const [list, setList] = useState([]);
     const [input, setInput] = useState({
         title: "",
+        content: "",
+        check: false,
 
     });
 
